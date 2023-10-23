@@ -10,9 +10,6 @@
     <!-- Favicon -->
     <link rel="icon" href="./assets/images/logo/favicon.svg" />
 
-    <!-- Fonts and Icons -->
-    <script src="https://kit.fontawesome.com/17add87f34.js" crossorigin="anonymous"></script>
-
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -35,24 +32,27 @@
             <p>En plein centre-ville ou en pleine nature</p>
             <form action="#" method="POST">
                 <label for="localisation"><i class="fa-solid fa-location-dot"></i></label>
-                <input id="localisation" type="text">
-                <button>Rechercher</button>
+                <input id="localisation" type="text" placeholder="Marseille, France">
+                <button type="submit">Rechercher</button>
             </form>
-            <h2>Filtres</h2>
-            <ul>
-                <li><i class="fa-solid fa-money-bill-wave"></i> Économique</li>
-                <li><i class="fa-solid fa-person"></i> Familial</li>
-                <li><i class="fa-solid fa-heart"></i> Romantique</li>
-                <li><i class="fa-solid fa-fire"></i> Nos pépites</li>
-            </ul>
-            <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="filters">
+                <h2>Filtres</h2>
+                <ul>
+                    <li><i class="fa-solid fa-money-bill-wave"></i> Économique</li>
+                    <li><i class="fa-solid fa-person"></i> Familial</li>
+                    <li><i class="fa-solid fa-heart"></i> Romantique</li>
+                    <li><i class="fa-solid fa-fire"></i> Nos pépites</li>
+                </ul>
+            </div>
+            <p class="notes"><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
+            </p>
         </section>
 
         <section id="accommodations">
-            <div class="accommodation-in-city">
+            <article class="accommodation-in-city">
                 <h2>Hébergements à Marseille</h2>
                 <div class="cards-zone">
-                    <div class="card">
+                    <a href="#" class="card">
                         <div class="card-cover">
                             <img src="./assets/images/hebergements/fred-kleber.jpg" alt="Hôtel du port">
                         </div>
@@ -67,8 +67,8 @@
                                 <i class="fa-solid fa-star grey"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a href="#" class="card">
                         <div class="card-cover">
                             <img src="./assets/images/hebergements/febrian-zakaria.jpg" alt="Hôtel Chez Amina">
                         </div>
@@ -83,8 +83,8 @@
                                 <i class="fa-solid fa-star grey"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a href="#" class="card">
                         <div class="card-cover">
                             <img src="./assets/images/hebergements/reisetopia.jpg" alt="Hôtel Les mouettes">
                         </div>
@@ -99,8 +99,8 @@
                                 <i class="fa-solid fa-star grey"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a href="#" class="card">
                         <div class="card-cover">
                             <img src="./assets/images/hebergements/annie-spratt.jpg" alt=">Hôtel de la mer">
                         </div>
@@ -115,8 +115,8 @@
                                 <i class="fa-solid fa-star grey"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a href="#" class="card">
                         <div class="card-cover">
                             <img src="./assets/images/hebergements/marcus-loke.jpg" alt="Auberge La Canebière">
                         </div>
@@ -131,8 +131,8 @@
                                 <i class="fa-solid fa-star grey"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a href="#" class="card">
                         <div class="card-cover">
                             <img src="./assets/images/hebergements/nicate-lee.jpg" alt="Auberge Le Panier">
                         </div>
@@ -147,17 +147,17 @@
                                 <i class="fa-solid fa-star grey"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                 </div>
                 <details>
                     <summary>Afficher plus</summary>
                 </details>
-            </div>
-            <div class="the-most-popular">
+            </article>
+            <article class="the-most-popular">
                 <h2><span>Les plus populaires</span> <i class="fa-solid fa-chart-line"></i></h2>
                 <div class="cards-zone">
-                    <div class="card">
+                    <a href="#" class="card">
                         <div class="card-cover">
                             <img src="./assets/images/hebergements/emile-guillemot.jpg" alt="Auberge la Canebière">
                         </div>
@@ -172,8 +172,8 @@
                                 <i class="fa-solid fa-star grey"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a href="#" class="card">
                         <div class="card-cover">
                             <img src="./assets/images/hebergements/aw-creative.jpg"
                                 alt="Chambres d’hôtes Au cœur de l’eau">
@@ -189,8 +189,8 @@
                                 <i class="fa-solid fa-star grey"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a href="#" class="card">
                         <div class="card-cover">
                             <img src="./assets/images/hebergements/febrian-zakaria2.jpg" alt="Hôtel Bleu et Blanc">
                         </div>
@@ -205,45 +205,45 @@
                                 <i class="fa-solid fa-star grey"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-            </div>
+            </article>
         </section>
 
         <section id="activities">
             <h2>Activités à Marseille</h2>
             <div class="cards-zone">
-                <div class="card">
+                <a href="#" class="card">
                     <div class="card-cover"><img src="./assets/images/activites/reno-laithienne.jpg" alt="Vieux-Port">
                     </div>
                     <div class="card-name">
                         <h3>Vieux-Port</h3>
                     </div>
-                </div>
-                <div class="card">
+                </a>
+                <a href="#" class="card">
                     <div class="card-cover"><img src="./assets/images/activites/paul-hermann.jpg"
                             alt="Fort de Pomègues">
                     </div>
                     <div class="card-name">
                         <h3>Fort de Pomègues</h3>
                     </div>
-                </div>
-                <div class="card">
+                </a>
+                <a href="#" class="card">
                     <div class="card-cover"><img src="./assets/images/activites/kilyan-sockalingum.jpg"
                             alt="Parc national des Calanques">
                     </div>
                     <div class="card-name">
                         <h3>Parc national des Calanques</h3>
                     </div>
-                </div>
-                <div class="card">
+                </a>
+                <a href="#" class="card">
                     <div class="card-cover"><img src="./assets/images/activites/florian-wehde.jpg"
                             alt="Notre-Dame-de-la-Garde">
                     </div>
                     <div class="card-name">
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
     </main>
