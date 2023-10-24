@@ -10,6 +10,9 @@
     <!-- Favicon -->
     <link rel="icon" href="./assets/images/logo/favicon.svg" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -33,7 +36,8 @@
             <form action="#" method="POST">
                 <label for="localisation"><i class="fa-solid fa-location-dot"></i></label>
                 <input id="localisation" type="text" placeholder="Marseille, France">
-                <button type="submit">Rechercher</button>
+                <button type="submit"><span class="responsive-off">Rechercher</span><i
+                        class="fa-solid fa-magnifying-glass responsive-on"></i></button>
             </form>
             <div class="filters">
                 <h2>Filtres</h2>
@@ -256,7 +260,7 @@
                 <li><a href="#">Données et confidentialité</a></li>
             </ul>
         </div>
-        <div class="accomodations">
+        <div class="accommodations">
             <h3>Nos hébergements</h3>
             <ul>
                 <li><a href="#">Charte qualité</a></li>
