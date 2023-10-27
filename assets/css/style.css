@@ -37,9 +37,10 @@ h1 {
 }
 
 h2 {
+    display: flex;
     font-size: 22px;
     padding-block: 30px;
-
+    justify-content: space-between;
 }
 
 h3 {
@@ -112,13 +113,13 @@ header nav a {
     margin-left: 50px;
     border-top: 3px solid #fff;
     display: inline-block;
-    transition: border 0.3s;
+    transition: border 0.3s, color 0.3s;
 }
 
 header nav a:hover {
     color: var(--blue_color);
     border-top: 3px solid var(--blue_color);
-    transition: border 1.3s, color 0.5s;
+    transition: border 0.3s, color 0.3s;
 }
 
 /* Main */
@@ -147,6 +148,9 @@ main {
     width: 227px;
     padding: 14px;
     border: 1px solid var(--grey_color);
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 #info-search form input:focus {
@@ -219,6 +223,7 @@ main {
     padding: 5px 10px;
     border: #D9D9D9 solid 1px;
     border-radius: 24px;
+    margin-right: 5px;
 }
 
 #accommodations {
@@ -234,14 +239,15 @@ main {
 
 #accommodations .accommodation-in-city,
 #accommodations .the-most-popular {
+    height: 614px;
     background-color: var(--grey_color);
     border-radius: 20px;
-    padding: 15px 30px;
+    padding: 0 30px 30px;
 }
 
 
-#accommodations article .cards-zone .card .card-description .notation i {
-    margin-top: 5px;
+#accommodations article .cards-zone .card .card-description p {
+    margin: 5px 0;
 }
 
 #accommodations article .cards-zone .card {
@@ -268,7 +274,7 @@ main {
 
 #accommodations .accommodation-in-city .cards-zone .card {
     width: 31%;
-    height: 40%;
+    height: 207.25px;
     border-radius: 20px;
     padding: 5px;
     margin-bottom: 1.4rem;
@@ -340,8 +346,11 @@ main {
 }
 
 #accommodations .the-most-popular .cards-zone .card .card-description {
+    display: flex;
     width: 70%;
-    padding: 10px 10px;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
 }
 
 
@@ -453,6 +462,7 @@ footer div ul li {
     }
 
     #accommodations .the-most-popular {
+        height: auto;
         margin-top: 2rem;
     }
 
@@ -502,10 +512,11 @@ footer div ul li {
     header nav a {
         width: 50%;
         margin-left: 0;
-        border-bottom: 3px solid #fff;
+        border-bottom: 3px solid var(--grey_color);
         border-top: none;
         padding-top: 0;
         padding-bottom: 43px;
+
     }
 
     header nav a:hover {
@@ -532,6 +543,12 @@ footer div ul li {
         border-radius: 15px;
         box-shadow: #0000006b 0 3px 6px;
         margin-left: -10px;
+        transition: transform 0.3s;
+    }
+
+    #info-search form button:hover {
+        transform: scale(1.02);
+        transition: transform 0.3s;
     }
 
     #info-search .filters ul {
@@ -539,7 +556,9 @@ footer div ul li {
     }
 
     #info-search .filters ul li {
-        width: 48%;
+        width: 49%;
+        font-size: 14px;
+        padding: 15px;
         margin: 2vw 0;
     }
 
@@ -567,12 +586,21 @@ footer div ul li {
 
     #accommodations .accommodation-in-city {
         background-color: #fff;
+        margin-bottom: 56rem;
     }
 
     #accommodations .accommodation-in-city .cards-zone .card {
         width: 100%;
     }
 
+
+    #activities {
+        padding: 0 30px 30px;
+    }
+
+    #activities .cards-zone {
+        gap: 15px;
+    }
 
     #activities .cards-zone .card {
         width: 100%;
